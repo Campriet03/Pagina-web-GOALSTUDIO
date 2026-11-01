@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07110d">
+    <title>GOALSTUDIO | El fútbol se vive aquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav shell">
+            <a class="logo" href="#" data-page="inicio">GOAL<span>STUDIO.</span></a>
+            <div class="nav-links" id="navLinks">
+                <button class="nav-link active" data-page="inicio">Inicio</button>
+                <button class="nav-link" data-page="noticias">Noticias</button>
+                <button class="nav-link" data-page="partidos">Partidos</button>
+                <button class="nav-link" data-page="clubes">Clubes</button>
+                <button class="nav-link" data-page="futbolistas">Futbolistas</button>
+                <button class="nav-link" data-page="estadisticas">Estadísticas</button>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-button" id="themeButton" aria-label="Cambiar tema" title="Cambiar tema">☾</button>
+                <button class="live-button" id="liveButton">EN VIVO</button>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="active">
+            <div class="hero">
+                <div class="hero-content shell">
+                    <div class="eyebrow">Última hora · Champions League</div>
+                    <h1>El fútbol se vive <em>aquí.</em></h1>
+                    <p class="hero-copy">Análisis, emoción y las historias que hacen vibrar al mundo del balón. Todo en un solo lugar.</p>
+                    <button class="primary-btn" data-page="noticias">Explorar noticias <span>→</span></button>
+                </div>
+            </div>
+            <div class="ticker"><div class="ticker-track">
+                <span>Pasión sin límites</span><span>Noticias al instante</span><span>Fútbol global</span><span>Pasión sin límites</span><span>Noticias al instante</span><span>Fútbol global</span>
+            </div></div>
+
+            <div class="section">
+                <div class="shell">
+                    <div class="section-heading">
+                        <h2>Lo más <span>destacado</span></h2>
+                        <button class="text-link" data-page="noticias">Ver todo →</button>
+                    </div>
+                    <div class="news-grid">
+                        <article class="card featured-card carousel-slide active-slide">
+                            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85" alt="Jugador celebrando un gol">
+                            <div class="card-info"><div class="tag">Análisis</div><h3>El partido de la temporada ya tiene fecha</h3></div>
+                        </article>
+                        <article class="card carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=85" alt="Estadio de fútbol">
+                            <div class="card-info"><div class="tag">Champions</div><h3>La noche que Europa esperaba</h3></div>
+                        </article>
+                        <article class="card carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=85" alt="Balón sobre el césped">
+                            <div class="card-info"><div class="tag">Táctica</div><h3>El plan que está cambiando el juego</h3></div>
+                        </article>
+                    </div>
+                    <div class="carousel-controls" aria-label="Control de destacados">
+                        <button class="carousel-arrow" id="prevSlide" aria-label="Noticia anterior">←</button>
+                        <span id="slideStatus">1 / 3</span>
+                        <button class="carousel-arrow" id="nextSlide" aria-label="Siguiente noticia">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estadisticas" class="page-section">
+            <div class="stats-section">
+                <div class="shell">
+                    <div class="eyebrow">Centro de datos</div>
+                    <div class="section-heading"><h2>Estadísticas del <span>fútbol</span></h2></div>
+                    <div class="stats-layout">
+                        <article class="data-panel standings-panel">
+                            <div class="panel-heading"><div><span>LaLiga EA Sports</span><h3>Clasificación</h3></div><span class="live-tag">Actualizada hoy</span></div>
+                            <div class="standings-table">
+                                <div class="table-row table-head"><span>#</span><span>Equipo</span><span>PTS</span></div>
+                                <div class="table-row"><span>1</span><strong>Barcelona</strong><b>31</b></div>
+                                <div class="table-row"><span>2</span><strong>Real Madrid</strong><b>28</b></div>
+                                <div class="table-row"><span>3</span><strong>Atlético de Madrid</strong><b>27</b></div>
+                                <div class="table-row"><span>4</span><strong>Villarreal</strong><b>25</b></div>
+                                <div class="table-row"><span>5</span><strong>Sevilla</strong><b>22</b></div>
+                            </div>
+                        </article>
+
+                        <article class="data-panel results-panel">
+                            <div class="panel-heading"><div><span>Última jornada</span><h3>Resultados</h3></div></div>
+                            <div class="result-list">
+                                <div class="result-row"><span>Madrid</span><strong>3 <i>–</i> 1</strong><span>Sevilla</span></div>
+                                <div class="result-row"><span>Barcelona</span><strong>2 <i>–</i> 0</strong><span>Girona</span></div>
+                                <div class="result-row"><span>Atlético</span><strong>1 <i>–</i> 1</strong><span>Betis</span></div>
+                                <div class="result-row"><span>Villarreal</span><strong>4 <i>–</i> 2</strong><span>Valencia</span></div>
+                            </div>
+                        </article>
+
+                        <article class="data-panel compare-panel">
+                            <div class="panel-heading"><div><span>Rivalidad técnica</span><h3>Compara futbolistas</h3></div></div>
+                            <div class="compare-selectors">
+                                <select id="playerOne" aria-label="Primer futbolista">
+                                    <option value="messi">Lionel Messi</option><option value="mbappe">Kylian Mbappé</option><option value="yamal">Lamine Yamal</option><option value="haaland">Erling Haaland</option><option value="vini">Vinícius Jr.</option><option value="bellingham">Jude Bellingham</option>
+                                </select>
+                                <span>VS</span>
+                                <select id="playerTwo" aria-label="Segundo futbolista">
+                                    <option value="mbappe">Kylian Mbappé</option><option value="messi">Lionel Messi</option><option value="yamal">Lamine Yamal</option><option value="haaland">Erling Haaland</option><option value="vini">Vinícius Jr.</option><option value="bellingham">Jude Bellingham</option>
+                                </select>
+                            </div>
+                            <div class="comparison-values" id="comparisonValues"></div>
+                        </article>
+
+                        <article class="data-panel poll-panel">
+                            <div class="panel-heading"><div><span>Encuesta de la semana</span><h3>¿Quién será el MVP?</h3></div></div>
+                            <div class="poll-options">
+                                <button data-option="messi"><span>Lionel Messi</span><b>42%</b><i style="width:42%"></i></button>
+                                <button data-option="mbappe"><span>Kylian Mbappé</span><b>35%</b><i style="width:35%"></i></button>
+                                <button data-option="yamal"><span>Lamine Yamal</span><b>23%</b><i style="width:23%"></i></button>
+                                <button data-option="haaland"><span>Erling Haaland</span><b>15%</b><i style="width:15%"></i></button>
+                                <button data-option="vini"><span>Vinícius Jr.</span><b>12%</b><i style="width:12%"></i></button>
+                                <button data-option="bellingham"><span>Jude Bellingham</span><b>8%</b><i style="width:8%"></i></button>
+
+                            </div>
+                            <p id="pollMessage" class="poll-message">Selecciona tu favorito.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="page-section">
+            <div class="section" style="padding-top:150px">
+                <div class="shell">
+                    <div class="eyebrow" style="color:#879900">Actualidad</div>
+                    <div class="section-heading"><h2>Noticias</h2><label class="search-box">⌕ <input id="searchNews" type="search" placeholder="Buscar noticias"></label></div>
+                    <div class="stories searchable-grid">
+                        <article class="story reveal-item"><div class="story-image"><img src="https://images.unsplash.com/photo-1546608235-3310a2494cdf?auto=format&fit=crop&w=900&q=85" alt="Fútbol en el estadio"></div><div class="date">Internacional · Hace 28 minutos</div><h3>El mercado se activa con cuatro fichajes sorpresa</h3><p>Los grandes clubes preparan movimientos decisivos antes del cierre de mercado.</p><button class="favorite-button" data-favorite="mercado-fichajes" aria-label="Guardar noticia">♡</button></article>
+                        <article class="story reveal-item"><div class="story-image"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=85" alt="Jugadores en el campo"></div><div class="date">Ligas · Hace 1 hora</div><h3>Una jornada que puede cambiar la clasificación</h3><p>Los favoritos se enfrentan en una fecha cargada de duelos decisivos.</p><button class="favorite-button" data-favorite="jornada-clasificacion" aria-label="Guardar noticia">♡</button></article>
+                        <article class="story reveal-item"><div class="story-image"><img src="https://images.unsplash.com/photo-1577212017184-80cc0da11082?auto=format&fit=crop&w=900&q=85" alt="Entrenamiento de fútbol"></div><div class="date">Selecciones · Hace 3 horas</div><h3>Los jóvenes que quieren conquistar Europa</h3><p>Una generación talentosa empieza a marcar la diferencia en las grandes competencias.</p><button class="favorite-button" data-favorite="selecciones-jovenes" aria-label="Guardar noticia">♡</button></article>
+                    </div>
+                    <p class="empty-message" id="newsEmpty">No encontramos noticias con esa búsqueda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="partidos" class="page-section">
+            <div class="dark-section" style="padding-top:150px">
+                <div class="shell">
+                    <div class="eyebrow">Calendario</div>
+                    <div class="section-heading" style="border-color:var(--line)"><h2>Próximos <span style="color:var(--lime)">partidos</span></h2></div>
+                    <div class="match-filters" aria-label="Filtrar partidos">
+                        <button class="filter-button active" data-filter="todos">Todos</button>
+                        <button class="filter-button" data-filter="Champions">Champions</button>
+                        <button class="filter-button" data-filter="Premier">Premier</button>
+                        <button class="filter-button" data-filter="Serie A">Serie A</button>
+                        <button class="filter-button" data-filter="LaLiga">LaLiga</button>
+                        <button class="filter-button" data-filter="Bundesliga">Bundesliga</button>
+                    </div>
+                    <div class="matches-grid">
+                        <article class="match-card" data-competition="Champions" data-match="2026-11-24T20:00:00"><div class="match-meta"><span>Champions</span><span>20:00</span></div><div class="teams"><div><div class="crest">R</div><div class="team-name">Real Madrid</div></div><div class="score">–</div><div><div class="crest" style="background:#ff6b4a">B</div><div class="team-name">Barcelona</div></div></div><div class="countdown">Calculando...</div><div class="match-meta"><span>Santiago Bernabéu</span><span>Mié 24</span></div></article>
+                        <article class="match-card" data-competition="Premier" data-match="2026-11-28T18:30:00"><div class="match-meta"><span>Premier</span><span>18:30</span></div><div class="teams"><div><div class="crest">M</div><div class="team-name">Manchester</div></div><div class="score">–</div><div><div class="crest" style="background:#ff6b4a">A</div><div class="team-name">Arsenal</div></div></div><div class="countdown">Calculando...</div><div class="match-meta"><span>Old Trafford</span><span>Dom 28</span></div></article>
+                        <article class="match-card" data-competition="Serie A" data-match="2026-11-27T16:45:00"><div class="match-meta"><span>Serie A</span><span>16:45</span></div><div class="teams"><div><div class="crest">M</div><div class="team-name">Milán</div></div><div class="score">–</div><div><div class="crest" style="background:#ff6b4a">J</div><div class="team-name">Juventus</div></div></div><div class="countdown">Calculando...</div><div class="match-meta"><span>San Siro</span><span>Sáb 27</span></div></article>
+                        <article class="match-card" data-competition="LaLiga" data-match="2026-11-29T21:00:00"><div class="match-meta"><span>LaLiga</span><span>21:00</span></div><div class="teams"><div><div class="crest">R</div><div class="team-name">Real Madrid</div></div><div class="score">–</div><div><div class="crest" style="background:#ff6b4a">S</div><div class="team-name">Sevilla</div></div></div><div class="countdown">Calculando...</div><div class="match-meta"><span>Bernabéu</span><span>Dom 29</span></div></article>
+                        <article class="match-card" data-competition="Bundesliga" data-match="2026-11-30T18:30:00"><div class="match-meta"><span>Bundesliga</span><span>18:30</span></div><div class="teams"><div><div class="crest">B</div><div class="team-name">Bayern</div></div><div class="score">–</div><div><div class="crest" style="background:#ff6b4a">D</div><div class="team-name">Dortmund</div></div></div><div class="countdown">Calculando...</div><div class="match-meta"><span>Allianz Arena</span><span>Lun 30</span></div></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="futbolistas" class="page-section">
+            <div class="section" style="padding-top:150px">
+                <div class="shell">
+                    <div class="eyebrow" style="color:#879900">Estrellas</div>
+                    <div class="section-heading">
+                        <h2>Los mejores <span>futbolistas</span></h2>
+                        <label class="search-box">⌕ <input id="searchPlayer" type="search" placeholder="Buscar futbolista"></label>
+                    </div>
+                    <div class="player-grid searchable-grid">
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=85" alt="Futbolista en un estadio">
+                            <div class="player-info"><span>España · Mediocampista</span><h3>Lamine Yamal</h3><div class="player-stats"><b>12</b> goles <b>18</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-yamal" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=85" alt="Jugador profesional">
+                            <div class="player-info"><span>Francia · Delantero</span><h3>Kylian Mbappé</h3><div class="player-stats"><b>24</b> goles <b>8</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-mbappe" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85" alt="Futbolista celebrando">
+                            <div class="player-info"><span>Argentina · Delantero</span><h3>Lionel Messi</h3><div class="player-stats"><b>21</b> goles <b>15</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-messi" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=85" alt="Jugador del Manchester City">
+                            <div class="player-info"><span>Noruega · Delantero</span><h3>Erling Haaland</h3><div class="player-stats"><b>27</b> goles <b>5</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-haaland" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Jugador brasileño en el campo">
+                            <div class="player-info"><span>Brasil · Extremo</span><h3>Vinícius Jr.</h3><div class="player-stats"><b>16</b> goles <b>12</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-vini" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                        <article class="player-card reveal-item">
+                            <img src="https://images.unsplash.com/photo-1546608235-3310a2494cdf?auto=format&fit=crop&w=900&q=85" alt="Jugador inglés">
+                            <div class="player-info"><span>Inglaterra · Mediocampista</span><h3>Jude Bellingham</h3><div class="player-stats"><b>14</b> goles <b>9</b> asistencias</div><button class="favorite-button" data-favorite="futbolista-bellingham" aria-label="Guardar futbolista">♡</button></div>
+                        </article>
+                    </div>
+                    <p class="empty-message" id="playerEmpty">No encontramos futbolistas con esa búsqueda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="clubes" class="page-section">
+            <div class="section" style="padding-top:150px">
+                <div class="shell">
+                    <div class="eyebrow" style="color:#879900">Equipos</div>
+                    <div class="section-heading"><h2>Clubes de <span>élite</span></h2><label class="search-box">⌕ <input id="searchClub" type="search" placeholder="Buscar clubes"></label></div>
+                    <div class="stories searchable-grid">
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=900&q=85" alt="Estadio del Real Madrid"></div>
+                            <div class="club-crest">RM</div>
+                            <div class="date">España · LaLiga</div>
+                            <h3>Real Madrid</h3>
+                            <p>Fundado en 1902. Club madrileño de 35 títulos nacionales y múltiples Copas de Europa.</p>
+                            <button class="favorite-button" data-favorite="club-real-madrid" aria-label="Guardar Real Madrid">♡</button>
+                        </article>
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Estadio del Manchester City"></div>
+                            <div class="club-crest city-crest">MC</div>
+                            <div class="date">Inglaterra · Premier League</div>
+                            <h3>Manchester City</h3>
+                            <p>Club de Manchester reconocido por su juego ofensivo y su dominio reciente en Inglaterra y Europa.</p>
+                            <button class="favorite-button" data-favorite="club-manchester-city" aria-label="Guardar Manchester City">♡</button>
+                        </article>
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Campo de fútbol del Bayern Múnich"></div>
+                            <div class="club-crest bayern-crest">BM</div>
+                            <div class="date">Alemania · Bundesliga</div>
+                            <h3>Bayern Múnich</h3>
+                            <p>Emblemático club bávaro, habitual protagonista en Alemania y en las grandes noches europeas.</p>
+                            <button class="favorite-button" data-favorite="club-bayern-munich" aria-label="Guardar Bayern Múnich">♡</button>
+                        </article>
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=85" alt="Estadio del FC Barcelona"></div>
+                            <div class="club-crest barca-crest">FCB</div>
+                            <div class="date">España · LaLiga</div>
+                            <h3>FC Barcelona</h3>
+                            <p>Club catalán conocido por su estilo de juego, su cantera y su palmarés internacional.</p>
+                            <button class="favorite-button" data-favorite="club-barcelona" aria-label="Guardar FC Barcelona">♡</button>
+                        </article>
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85" alt="Estadio del Liverpool"></div>
+                            <div class="club-crest liverpool-crest">LFC</div>
+                            <div class="date">Inglaterra · Premier League</div>
+                            <h3>Liverpool</h3>
+                            <p>Equipo inglés de Anfield, reconocido por su intensidad y su enorme tradición europea.</p>
+                            <button class="favorite-button" data-favorite="club-liverpool" aria-label="Guardar Liverpool">♡</button>
+                        </article>
+                        <article class="story club-card reveal-item">
+                            <div class="story-image"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=85" alt="Estadio de fútbol del Inter de Milán"></div>
+                            <div class="club-crest inter-crest">INT</div>
+                            <div class="date">Italia · Serie A</div>
+                            <h3>Inter de Milán</h3>
+                            <p>Club milanés histórico con una fuerte presencia en el fútbol italiano y europeo.</p>
+                            <button class="favorite-button" data-favorite="club-inter" aria-label="Guardar Inter de Milán">♡</button>
+                        </article>
+                    </div>
+                    <p class="empty-message" id="clubEmpty">No encontramos clubes con esa búsqueda.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="shell">
+            <div class="footer-grid">
+                <div><div class="logo">GOAL<span>STUDIO.</span></div><p>La pasión del fútbol, contada con otra intensidad.</p></div>
+                <div><h3>Secciones</h3><a href="#" data-page="noticias">Noticias</a><br><a href="#" data-page="partidos">Partidos</a><br><a href="#" data-page="clubes">Clubes</a><br><a href="#" data-page="futbolistas">Futbolistas</a><br><a href="#" data-page="estadisticas">Estadísticas</a></div>
+                <div><h3>Boletín de fútbol</h3><form id="newsletterForm" class="newsletter-form"><input id="newsletterEmail" type="email" placeholder="Tu correo electrónico" required><button type="submit">Suscribirme</button><p id="newsletterMessage" class="newsletter-message"></p></form></div>
+                <div class="social-section">
+                    <h3>Redes sociales</h3>
+                    <p>Síguenos para vivir cada partido.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram">Instagram</a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook">Facebook</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar YouTube">YouTube</a>
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar TikTok">TikTok</a>
+                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar WhatsApp">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"><span>© 2026 GOALSTUDIO. Todos los derechos reservados.</span><span>Diseñado por Camilo Prieto</span></div>
+        </div>
+    </footer>
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
